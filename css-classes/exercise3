@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+    <head>
+        <h1></h1>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    </head>
+
+    <body>
+        <div class="header"></div>
+        
+        <div class="main">
+        	<div class="widget"></div>
+        	<div class="widget">
+        		<div class="sub-widget"></div>
+        	</div>
+        	<div class="widget blue"></div>
+        	<div class="gadget"></div>
+        	<div class="widget blue"></div>
+        	<div class="widget"></div>
+        	<div class="gadget blue"></div>
+        	<div class="widget"></div>
+        	<div class="gadget"></div>
+        	<div class="widget"></div>
+        </div>
+        <div class="footer"></div>
+    </body>
+</html>
