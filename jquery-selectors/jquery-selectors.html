@@ -44,7 +44,42 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" >
 
-// TODO
+$('.new-item').on('submit', function (e) {
+  e.preventDefault();
+
+  // In jQuery, the value of `this` is the element that triggered the event
+  // In this case, `this` points to the form tag
+  var newItemName = $('.price', this).val();
+  console.log(newItemName);
+});
+
+$('.item.active').append('<p>Buy One, Get One!</p>');
+$('div.price:last').remove();
+
+$('.item:last').append('<div class="price">$121</div>');
+
+$('.item:first')
+  .css('width', '60px')
+  .find('.price')
+    .css('font-size', '25px');
+
+$('.new-item')
+    .css('background-color', 'lime')
+    .find('.name')
+      .css('font-size', '30px');
+
+$('body')
+  .css('background-color', 'teal')
+  .find('div > label')
+    .css('font-size', '15px')
+    .end()
+  .find('div.item')
+    .css('height', '60px');
+
+$('.new-item').on('submit', function (e) {
+  var name = $('.name').val();
+  $('#items').append(name);
+});
 
 </script>
 </body>

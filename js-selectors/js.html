@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+/*        	var yell = function(script)
+				{
+					alert(script.toUpperCase());
+				};
+				yell("what");*/
+
+/*var divideBy = function(x, y) {
+	return(x/y);
+};
+var result = divideBy(50, 2);
+console.log('Result should be 25:', result);
+
+result = divideBy(40, 10);
+console.log('Result should be 4:', result);
+
+result = divideBy(99, 3);
+console.log('Result should be 33:', result);*/
+
+
+/**
+ * Exercise 0: angryGandalf (example)
+**/
+
+// Define angryGandalf with input parameters
+
+  // Define the variables needed
+
+  // Run conditional on type for 'grey' and 'white'
+
+  // Return message
+/*var angryGandalf = function(color) {
+	if (color === "grey") {
+		return("YOU...SHALL NOT... PASS!");
+	}
+	else if (color === "white") {
+		return("You merely passed me to your demise.");
+	}
+	else {
+		return("I don't think I'm Gandalf anymore.");
+	}
+}
+console.assert(angryGandalf('grey') === "YOU...SHALL NOT... PASS!");
+console.assert(angryGandalf('white') === "You merely passed me to your demise.");
+console.assert(angryGandalf(2) === "I don't think I'm Gandalf anymore.");*/
+
+/**
+ * @exercise 1 - lifeLine
+ * @description takes children, partner's name, hometown, and job
+ * @returns 'You are a W from X and married to Y  with Z kids.'
+**/
+
+// Create function with name tellFortune and appropriate parameters
+// Take 4 arguments: number of children, partner's name, hometown, job title.
+
+  // Define string variable that will have that output
+
+  // Return that string
+/*var lifeLine = function(job, hometown, pname, children) {
+	return("You are a " + job + " from " + hometown + " and married to " + pname + " with  " + children + " kids.");
+};
+
+console.assert(lifeLine('bball player', 'Spain', 'Shaq', 3) === 'You are a bball player from Spain and married to Shaq  with 3 kids.' ); 
+console.assert(lifeLine('stunt double', 'Japan', 'Ryan Gosling', 3000) === 'You are a stunt double from Japan and married to Ryan Gosling  with 3000 kids.');
+console.assert(lifeLine('Elvis impersonator', 'Russia', 'The Oatmeal', 0) === 'You are a Elvis impersonator from Russia and married to The Oatmeal  with 0 kids.') ; 
+*/
+
+/**
+ * Exercise 2 Part 1: ofAge
+**/
+
+// Write a function named `ofAge` that:
+    // takes 1 argument: age.
+    // calculate if that age is 21 or above.
+    // Output true or false based on if the age is above age
+/*
+var ofAge = function(age) {
+	if(age >= 21) {
+		return(true);
+	} else {
+		return(false);
+	};
+};
+
+
+console.assert(ofAge(21) === true);
+console.assert(ofAge(22) === true);
+console.assert(ofAge(18) === false);
+console.assert(ofAge(0) === false);
+console.assert(ofAge(-2) === false);*/
+
+
+/**
+ * Exercise 2 Part 2: getAge
+**/
+/*
+    function calculateAge(birthMonth, birthDay, birthYear) {
+
+        // Get Todays Date
+        var todayDate = new Date(),
+            todayYear = todayDate.getFullYear(),
+            todayMonth = todayDate.getMonth(),
+            todayDay = todayDate.getDate();
+
+        // Calculate Age
+        var age = todayYear - birthYear;
+
+        // Check month discrepancies
+        if (todayMonth < (birthMonth - 1)) {
+            age--;
+        }
+
+        // Check day discrepancies
+        if (((birthMonth - 1) == todayMonth) && (todayDay < birthDay)) {
+            age--;
+        }
+
+        // @return {Number} age
+        return age;
+    };
+    console.assert(calculateAge(2, 14, 1981) === 33);
+    console.assert(calculateAge(2, 14, 1982) === 32);
+    console.assert(calculateAge(2, 14, 1983) === 31);
+    console.assert(calculateAge(2, 14, 1984) === 30);*/
+
+    /**
+ * Exercise 2 Part 3: checkOfAge
+**/
+
+// Write a function named `checkOfAge` that:
+    // takes 3 arguments: month, day, year.
+    // Use the getAge function to calculate the age.
+    // calculate if that age is 21 or above.
+    // Output true or false based on if the age is above age
+
+var checkOfAge = function(birthMonth, birthDay, birthYear) {
+
+        // Get Todays Date
+        var todayDate = new Date(),
+            todayYear = todayDate.getFullYear(),
+            todayMonth = todayDate.getMonth(),
+            todayDay = todayDate.getDate();
+
+        // Calculate Age
+        var age = todayYear - birthYear;
+
+/*        // Check month discrepancies
+        if (todayMonth < (birthMonth - 1)) {
+            age--;
+        }
+
+        // Check day discrepancies
+        if (((birthMonth - 1) == todayMonth) && (todayDay < birthDay)) {
+            age--;
+        }
+
+        // @return {Number} age
+        return age;*/
+		
+		
+		
+		if(age >= 21) {
+        	return true;
+        } else {
+        	return false;
+        };
+
+    };
+
+
+
+console.assert(checkOfAge(12,01,1988) === true);
+console.assert(checkOfAge(1,1,1993) === true);
+console.assert(checkOfAge(1,1,2001) === false);
+
+
+
+
+        </script>
+    </body>
+</html>
